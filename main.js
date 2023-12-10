@@ -1,6 +1,6 @@
 var wsUrl = Cookies.get("wsUrl");
 if (wsUrl == undefined) {
-    wsUrl = "wss://byngosink-ws.manicjamie.com:555/"
+    wsUrl = "ws://localhost:555/"
 }
 console.debug("Starting connection to " + wsUrl);
 var websocket = new ReconnectingWebSocket(wsUrl); 
